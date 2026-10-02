@@ -1,0 +1,31 @@
+:root {
+    --text-color: #1E1B38;
+    --link-color: #1A00FF;
+    --background-color: #F8F9FA;
+    --heading-color: #6C5CE7;
+    --card-border-color: #FF9F43;
+    --button-color: #6C5CE7;
+    --button-border-color: #00D2D3;
+    --button-text-color: #F8F9FA;
+    --header-footer-color: #f7e7ce;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins', -apple-system;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
