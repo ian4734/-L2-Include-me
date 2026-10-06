@@ -37,6 +37,7 @@ nav {
     align-items: center;
     padding: 0 50px;
     height: 80px;
+    background-color: var(--header-footer-color);
 }
 
 nav .left a {
@@ -63,6 +64,66 @@ nav .right a:last-child {
 
 nav .right a span {
     margin-left: 2.5px;
+}
+
+/* Section 1: Hero-Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0px;
+    gap: 40px;
+}
+
+.hero-section .text {
+    flex: 5;
+}
+
+.hero-section .text h2 {
+    font-family: "fredoka";
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 30px;
+}
+
+.hero-section .text p {
+    font-family: "poppins";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    max-width: 540px;
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a span {
+    font-family: "poppins";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--button-text-color);
+}
+
+.hero-section .text .links a {
+    padding: 20px 20px;
+    background-color: var(--button-color);
+    border: 3px solid var(--button-border-color);
+    border-radius: 99px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.hero-section .headshot-image {
+    flex: 2;
+}
+
+.hero-section .headshot-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
 }
 
 @media (max-width: 600px) {
