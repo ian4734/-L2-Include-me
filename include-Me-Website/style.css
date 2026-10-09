@@ -4,6 +4,7 @@
     --background-color: #F8F9FA;
     --heading-color: #6C5CE7;
     --card-border-color: #FF9F43;
+    --card-color: #FAF0E6;
     --button-color: #6C5CE7;
     --button-border-color: #00D2D3;
     --button-text-color: #F8F9FA;
@@ -36,8 +37,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    height: 80px;
+    height: 90px;
     background-color: var(--header-footer-color);
+
 }
 
 nav .left a {
@@ -53,6 +55,9 @@ nav .right a {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 0 10px;
+    text-decoration: none;
+    transition: 0.4s;
+    position: relative;
 }
 
 nav .right a:last-child {
@@ -60,6 +65,21 @@ nav .right a:last-child {
     background-color: var(--text-color);
     padding: 5px 10px;
     border-radius: 18px;
+}
+
+nav .right a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: var(--card-border-color);
+    top: -8px;
+    left: 0;
+    transition: height 0.4s;
+}
+
+nav .right a:hover::before {
+    height: 4px;
 }
 
 nav .right a span {
@@ -82,7 +102,7 @@ nav .right a span {
 
 .hero-section .text h2 {
     font-family: "fredoka";
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     color: var(--heading-color);
     margin-bottom: 30px;
@@ -114,10 +134,21 @@ nav .right a span {
     border-radius: 99px;
     margin-right: 15px;
     margin-bottom: 10px;
+    transition-duration: 0.4s;
+}
+
+.hero-section .text .links a:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+    transition-duration: 0.4s;
+    padding: 20px 30px;
 }
 
 .hero-section .headshot-image {
     flex: 2;
+    background-color: var(--card-color);
+    padding: 50px 50px;
+    border-radius: 99px;
+    border: 4px solid var(--card-border-color);
 }
 
 .hero-section .headshot-image img {
@@ -127,6 +158,7 @@ nav .right a span {
 }
 
 @media (max-width: 600px) {
+
     /* NAVBAR */
     nav {
         padding: 0 20px;
@@ -149,4 +181,23 @@ nav .right a span {
     nav .right a span {
         display: none;
     }
+
+    /* Section 1: Hero-Section */
+    .hero-section .text h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section .text p {
+        font-size: 1rem;
+    }
+
+    .hero-section .text .links a span {
+        font-size: 1rem;
+    }
+
+    .hero-section .text .links a {
+        padding: 3px 3px;
+        display: flex;
+    }
+
 }
