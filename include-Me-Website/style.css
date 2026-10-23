@@ -93,6 +93,7 @@ nav .right a span {
     align-items: center;
     padding: 0 50px;
     margin: 50px 0px;
+    margin-bottom: 340px;
     gap: 40px;
 }
 
@@ -156,6 +157,61 @@ nav .right a span {
     height: auto;
     border-radius: 10%;
 }
+
+/* Section 2: About */
+.about-section .about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 50px;
+    margin: 50px 0px;
+    gap: 40px;
+}
+
+.about-section .about-text h2 {
+    font-family: "fredoka";
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.about-section .about-text .about-intro {
+    font-family: "poppins";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    max-width: 900px;
+}
+
+.about-section .about-text .about-intro {
+    font-size: 1.5rem;
+}
+
+.about-section .about-text .track-cards {
+    display: flex;
+    gap: 80px;
+    font-size: 1.2rem;
+    font-family: "poppins";
+    font-weight: 500;
+}
+
+.about-section .about-text .track-cards .track-a {
+    background-color: var(--card-color);
+    padding: 40px 40px;
+    border-radius: 50px;
+    border: 4px solid var(--card-border-color);
+    max-width: 500px;
+}
+
+.about-section .about-text .track-cards .track-b {
+    background-color: var(--card-color);
+    padding: 40px 40px;
+    border-radius: 50px;
+    border: 4px solid var(--card-border-color);
+    max-width: 500px;
+}
+
 
 @media (max-width: 600px) {
 
